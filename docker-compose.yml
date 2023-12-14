@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  db:
+    platform: linux/x86_64
+    image: mysql:8.0.33
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'kind0314'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    command: --sql-mode=''
+    volumes:
+      - /Users/brand13/Dev/mysql-data:/var/lib/mysql --user 1000
+    user: root
+
