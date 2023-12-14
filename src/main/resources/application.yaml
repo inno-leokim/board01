@@ -41,7 +41,16 @@ spring:
     rest:
       base-path: /api
       detection-strategy: annotated
-
+  thymeleaf:
+    prefix: file:src/main/resources/templates/
+    cache: false
+  web:
+    resources:
+      static-locations:
+      - file:src/main/resources/static/
+  devtools: 
+    livereload:
+      enabled: true     
        
     
 

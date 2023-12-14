@@ -9,7 +9,7 @@ import com.brand13.board01.domain.ArticleComment;
 
 @RepositoryRestResource
 public interface ArticleCommentRepository extends 
-        JpaRepository<ArticleComment, Long>
-        // QuerydslPredicateExecutor<ArticleComment> //모든 필드에 대한 검색기능을 추가
+        JpaRepository<ArticleComment, Long>,
+        QuerydslPredicateExecutor<ArticleComment> //모든 필드에 대한 검색기능을 추가
 {
 }
