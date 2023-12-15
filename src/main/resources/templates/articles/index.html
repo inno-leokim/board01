@@ -6,9 +6,7 @@
     <title>게시판 페이지</title>
 </head>
 <body>
-    <header>
-        <hr/>
-    </header>
+    <header th:replace="header :: header"></header>
     <main>
         <form action="">
             <label for="search-type" hidden>유형</label>
@@ -44,10 +42,19 @@
 
             </tfoot>
         </table>
-        
+        <nav>
+           <table>
+            <tr>
+                <td>previous</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>next</td>
+            </tr>
+           </table> 
+        </nav>
     </main>
-    <footer>
-        <hr/>
-    </footer>
+    <footer th:replace="footer :: footer"></footer>
 </body>
 </html>
