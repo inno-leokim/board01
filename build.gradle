@@ -34,6 +34,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'org.springframework.data:spring-data-rest-hal-explorer'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 
 	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta' //springboot 3.0 이상
 	// implementation 'com.querydsl:querydsl-jpa' //springboot 3.0 미만
