@@ -10,6 +10,7 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 public class Board01Application {
 
 	public static void main(String[] args) {
+		// System.setProperty("spring.devtools.restart.enabled", "false");
 		SpringApplication.run(Board01Application.class, args);
 	}
 
