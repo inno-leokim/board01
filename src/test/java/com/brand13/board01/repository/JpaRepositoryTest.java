@@ -63,9 +63,9 @@ class JpaRepositoryTest {
         String updateHashTag = "#springboot";
         article.setHashTag(updateHashTag);
 
-        Article savArticle = articleRepository.saveAndFlush(article);
+        Article saveArticle = articleRepository.saveAndFlush(article);
 
-        assertThat(savArticle).hasFieldOrPropertyWithValue("hashtag", updateHashTag);
+        assertThat(saveArticle).hasFieldOrPropertyWithValue("hashtag", updateHashTag);
     }
 
     // @DisplayName("delete 테스트")
