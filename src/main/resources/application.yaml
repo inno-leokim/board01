@@ -12,8 +12,13 @@ logging:
 
 spring:
   datasource:
+<<<<<<< HEAD
     url: jdbc:mysql://211.45.170.92:3306/board?useSSL=false&allowPublicKeyRetrieval=true
     # url: jdbc:mysql://board-project-db.cultylr0esxi.ap-northeast-2.rds.amazonaws.com:3306/board
+=======
+    # url: jdbc:mysql://211.45.170.92:3306/board?useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://211.45.170.92:3306/board
+>>>>>>> 38454daafdf3ebe0ce00109149c291039a6f463b
     username: brand13
     password: kind0314
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -25,9 +30,9 @@ spring:
     defer-datasource-initialization: true
     database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
-      # ddl-auto: create #data.sql? ????? ???.
+      # ddl-auto: update #data.sql? ????? ???.
       show-sql: true
-      properties.:
+      properties:
         hibernate.format_sql: true
         hibernate.default_batch_fetch_size: 100 # 최대 100개의 bulk로 select
   h2:
@@ -47,10 +52,13 @@ spring:
   thymeleaf:
     prefix: file:src/main/resources/templates/
     cache: false
+  thymeleaf3:    # 내가 만든 속성. ThymeleafConfig.java
+    decoupled-logic: true
   web:
     resources:
       static-locations:
       - file:src/main/resources/static/
+<<<<<<< HEAD
   devtools: 
     livereload:
       enabled: true     
@@ -59,6 +67,14 @@ spring:
       enabled: ALWAYS   
     
 
+=======
+  devtools:
+    restart:
+      enabled: false
+  output:
+    ansi:
+      enabled: always     
+>>>>>>> 38454daafdf3ebe0ce00109149c291039a6f463b
 ---
 
 spring:

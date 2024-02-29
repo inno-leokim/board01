@@ -26,6 +26,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6' //thymeleaf와 spring-security를 동시에 선택해야 보이므로 initializer 구성시 잊지 말것!
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools' // 기본적으로 cache를 false한다.
 	runtimeOnly 'com.h2database:h2'
@@ -34,6 +36,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'org.springframework.data:spring-data-rest-hal-explorer'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 
 	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta' //springboot 3.0 이상
 	// implementation 'com.querydsl:querydsl-jpa' //springboot 3.0 미만

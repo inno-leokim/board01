@@ -10,4 +10,6 @@ create user `brand13`@`211.45.170.81` IDENTIFIED by 'kind0314';
 
 grant all on `board`.* to `brand13`@`211.45.170.81` with grant OPTION;
 
+
 show grants for `brand13`@`211.45.170.81`;
+
