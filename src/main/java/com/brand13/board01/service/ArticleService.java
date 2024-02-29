@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.brand13.board01.domain.types.SearchType;
 import com.brand13.board01.dto.ArticleDto;
+import com.brand13.board01.dto.ArticleUpdateDto;
 import com.brand13.board01.repository.ArticleRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -28,5 +29,17 @@ public class ArticleService {
     @Transactional(readOnly = true)
     public ArticleDto searchArticle(Long l){
         return null;
+    }
+
+    public void saveArticle(ArticleDto dto){
+
+    }
+
+    public void updateArticle(Long articleId, ArticleUpdateDto dto){
+
+    }
+
+    public void deleteArticle(long articleId) {
+   
     }
 }
