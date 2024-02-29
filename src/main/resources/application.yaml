@@ -12,13 +12,8 @@ logging:
 
 spring:
   datasource:
-<<<<<<< HEAD
     url: jdbc:mysql://211.45.170.92:3306/board?useSSL=false&allowPublicKeyRetrieval=true
     # url: jdbc:mysql://board-project-db.cultylr0esxi.ap-northeast-2.rds.amazonaws.com:3306/board
-=======
-    # url: jdbc:mysql://211.45.170.92:3306/board?useSSL=false&allowPublicKeyRetrieval=true
-    url: jdbc:mysql://211.45.170.92:3306/board
->>>>>>> 38454daafdf3ebe0ce00109149c291039a6f463b
     username: brand13
     password: kind0314
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -58,23 +53,21 @@ spring:
     resources:
       static-locations:
       - file:src/main/resources/static/
-<<<<<<< HEAD
-  devtools: 
-    livereload:
-      enabled: true     
-  output:   # spring.output.ansi.enabled=ALWAYS 로그 색상 추가 
-    ansi:
-      enabled: ALWAYS   
-    
 
-=======
+  # devtools: 
+  #   livereload:
+  #     enabled: true     
+  # output:   # spring.output.ansi.enabled=ALWAYS 로그 색상 추가 
+  #   ansi:
+  #     enabled: ALWAYS   
+    
   devtools:
     restart:
       enabled: false
   output:
     ansi:
       enabled: always     
->>>>>>> 38454daafdf3ebe0ce00109149c291039a6f463b
+
 ---
 
 spring:
