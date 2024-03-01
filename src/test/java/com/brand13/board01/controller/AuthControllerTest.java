@@ -33,8 +33,6 @@ public class AuthControllerTest {
         mvc.perform(get("/login"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML));
-                // .andExpect(view().name("articles/index")) //view 이름은 따로 없다. 스프링시큐리티에서 자동으로 만들기 때문.
-                
-
+                // .andExpect(view().name("articles/index")) //view 이름은 따로 없다. 스프링시큐리티에서 자동으로 만들기 때문.            
     }
 }
